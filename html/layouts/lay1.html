@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout Web 1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Style the Header*/
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /*Create two columns/boxes that float next to each other*
+        /*Left column*/
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px; /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            border-radius: 5px;
+            list-style-type: none;
+            padding: 0;
+            background-color: #333333;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #111;
+            border-radius: 5px;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        /*Clear float after the columns **/
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /*responsive layout make the two columns/boxes stack on top of eacth other instead of next to each other**/
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+<body>
+<header>
+    <h1>Layout Web 1</h1>
+</header>
+<section>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>London</h1>
+        <p>
+            lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusamus, aliquam, atque, autem blanditiis consequuntur corporis
+            cumque debitis dolorem doloremque dolores dolorum eaque eius
+        </p>
+    </article>
+</section>
+<footer>
+    <p>
+        &copy; Copyright 2018
+    </p>
+</footer>
+</body>
+</html>

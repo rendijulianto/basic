@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout With FlexBox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+
+            font-family: sans-serif, Arial, Helvetica, Verdana;
+        }
+
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /*Container for flexboxes*/
+        section{
+            display: -webkit-flex;
+            display: flex;
+        }
+        /*Style the navigation menu*!*/
+        nav {
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: #ddd;
+            padding:10px;
+        }
+        footer {
+            background-color: #777777;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<header>
+    KOTA
+</header>
+<section>
+    <nav>
+        <ul>
+            <li>
+                <a href="">Bandung</a>
+            </li>
+            <li>
+                <a href="">Jakarta</a>
+            </li>
+            <li>
+                <a href="">Surabaya</a>
+            </li>
+        </ul>
+    </nav>
+    <article>
+        <h1>Bandung</h1>
+        <p>
+            lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusamus, aliquam, atque, autem blanditiis consequuntur corporis
+            cumque debitis dolorem doloremque dolores dolorum eaque eius
+        </p>
+    </article>
+</section>
+<footer>
+    <p>
+        Bandung, Indonesia
+    </p>
+</footer>
+
+</body>
+</html>
