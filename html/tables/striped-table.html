@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Striped table</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    td {
+        background-color: #f2f2f2;
+        color: #000000;
+    }
+
+    td:hover {
+        background-color: #a8baa8;
+        color: white;
+    }
+    td.success {
+        background-color: green;
+        color: white;
+    }
+    .text-center {
+        text-align: center;
+    }
+
+
+
+</style>
+<body>
+    <h2>Mix Table</h2>
+    <table>
+        <caption>TABUNGANKU</caption>
+        <tr>
+            <th>SENIN</th>
+            <th>SELASA</th>
+            <th>RABU</th>
+            <th>KAMIS</th>
+            <th>JUM'AT</th>
+            <th>SABTU</th>
+            <th>AHAD</th>
+        </tr>
+        <tr>
+            <td class="success">10.000</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="success">2.000</td>
+            <td></td>
+            <td class="success">10.000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="success">10.000</td>
+            <td class="success">2.000</td>
+            <td class="success">20.000</td>
+            <td></td>
+            <td class="success">10.000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="success">10.000</td>
+            <td class="success">2.000</td>
+            <td></td>
+            <td class="success">20.000</td>
+            <td class="success">10.000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="success">10.000</td>
+            <td></td>
+            <td class="success">2.000</td>
+            <td class="success">2.000</td>
+            <td></td>
+            <td class="success">10.000</td>
+            <td class="success">20.000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="success">10.000</td>
+            <td class="success">2.000</td>
+            <td></td>
+            <td class="success">10.000</td>
+            <td></td>
+            <td class="success">20.000</td>
+        </tr>
+        <tr>
+            <td>TOTAL</td>
+            <td colspan="6" class="success text-center">Rp 20.000</td>
+        </tr>
+    </table>
+</body>
+</html>

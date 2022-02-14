@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tables</title>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+<body>
+<h2>Set the height of the second row to 200 pixels</h2>
+<table width="100%">
+    <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Age</th>
+    </tr>
+    <tr style="height: 200px">
+        <td>John</td>
+        <td>Doe</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>20</td>
+    </tr>
+</table>
+<hr>
+<h2>Header for multiple columns</h2>
+<table width="100%">
+    <caption>Daftar Nama</caption>
+    <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>20</td>
+    </tr>
+</table>
+<hr>
+<h2>Cell that spans two rows</h2>
+<table width="100%">
+    <tr>
+        <th>Name</th>
+        <td>Rendi Julianto</td>
+    </tr>
+    <tr>
+        <th rowspan="2">Age</th>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>20</td>
+    </tr>
+</table>
+</body>
+</html>
